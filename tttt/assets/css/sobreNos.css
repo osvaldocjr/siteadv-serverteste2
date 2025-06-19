@@ -1,0 +1,116 @@
+#sobreNos {
+    padding: 50px 0;
+    width: 100%;
+    background-color: var(--cor-bege-claro);
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-nos-container {
+    padding: 0 30px;
+    display: flex;
+}
+
+.imagem-sobreNos {
+    display:flex;
+    align-items:center;
+}
+
+.titulo-sobreNos h2 {
+    font-family:"times", Arial, Helvetica, sans-serif;
+    color: var(--cor-titulo);
+    font-size: 24px;
+    font-weight:600;
+}
+
+.texto-sobreNos p {
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto);
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.texto-sobreNos p:last-child {
+    margin-bottom:0;
+}
+
+.barra-dourada {
+    margin:15px 0;
+    height:4px;
+    width:60px;
+    background-color:var(--cor-dourado);
+}
+
+.certificacao-caixa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.titulo-certificado img {
+    height: 20px;
+}
+.titulo-certificado {
+    margin-bottom:8px;
+}
+
+.titulo-span {
+    font-family:"times", Arial, Helvetica, sans-serif;
+    color:#2B2B2B;
+    font-weight:700;
+    font-size:18px;
+}
+.texto-span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:200;
+    color: #4a4a4a;;
+    font-size:13px;
+}
+.experiencia-sobreNos,
+.equipe-sobreNos,
+.atendimento-sobreNos,
+.compromisso-sobreNos {
+    padding:10px 10px;
+    border:#C9A74B 1px solid;
+    border-radius:20px;
+}
+
+@media (max-width: 1200px) {
+.imagem-sobreNos {
+width: 100%; 
+}
+}
+@media (max-width: 960px) {
+.imagem-sobreNos img {
+    width:100%;
+}
+.imagem-sobreNos {
+width: 80%; 
+box-shadow:1px 8px 19px -2px #afafaf;
+border-radius:10px;
+}
+#sobreNos {
+    gap:50px;
+    align-items:center;
+    flex-direction:column;
+}
+}
+@media (max-width: 550px) {
+.certificacao-caixa {
+    display:flex;
+    flex-direction:column;
+}
+}
+
+@media (max-width: 400px) {
+.titulo-sobreNos h2 {
+    font-size:21px;
+}
+.texto-sobreNos p {
+    font-size:17px;
+}
+.titulo-span {
+    font-weight: 600;
+    font-size:18px;
+}
+}

@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    @font-face {
+        font-family:"times";
+        src: url('../fonts/times.ttf') format('truetype');
+        font-weight:normal;
+        font-style:normal;
+    };
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+  --cor-marrom-escuro: #4A2222;
+
+  --cor-cobre: #9E4C26;
+
+  --cor-laranja-queimado: #C27237;
+
+  --cor-bege-claro: #D6C4BA;
+
+  --cor-creme: #F7EDE4;
+
+  --cor-azul-escuro: #192841;
+
+  --cor-texto-claro: #ffffff;
+  --cor-texto-escuro: #333333; 
+
+  --cor-titulo:#1F1F1F;
+  --cor-texto:#4A4A4A;
+  --cor-dourado:#C9A74B;
+
+  --cor-fundo-preto:#05080E;
+  --cor-fundo-cinza:#F9F9F9;
+  --cor-fundo-branco:#FFF;
+}
+
+
+body {
+    height: 100vh;
+}
+.cor-creme {
+    background-color:var(--cor-creme);
+}
+.cor-bege-claro {
+    background-color:var(--cor-bege-claro);
+}
+.cor-marrom {
+    background-color:var(--cor-marrom-escuro);
+}
+.titulo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:35px;
+}
+
+.titulo-area h3 {
+    font-size: 28px;
+    font-family: "times", Arial, Helvetica, sans-serif;
+    color: var(--cor-titulo);
+}
+
+.titulo-area h6 {
+    text-align: center;
+    font-weight: 400;
+    width: 60%;
+    font-size: 18px;
+    color: var(--cor-texto);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.barra-dourada-central {
+    margin: 15px 0;
+    height: 4px;
+    width: 90px;
+    background-color: #C9A74B;
+}
+
+.titulo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:35px;
+}
+
+.titulo-area h3 {
+    font-size: 28px;
+    font-family: "times", Arial, Helvetica, sans-serif;
+    color: var(--cor-titulo);
+}
+
+.titulo-area h6 {
+    text-align: center;
+    font-weight: 400;
+    width: 60%;
+    font-size: 18px;
+    color: var(--cor-texto);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 400px) {
+    .titulo-area h3 {
+        font-size:23px;
+    }
+    .titulo-area h6 {
+        font-size:20px;
+    }
+}

@@ -1,0 +1,88 @@
+.contato {
+    padding: 50px 20px;
+    background-color:var(--cor-creme);
+}
+
+.redeSociais-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.instagram-container {
+    height: 40px;
+    width: 175px;
+}
+
+.instagram-container img {
+    height: 30px;
+}
+
+.instagram-container img {
+    color: var(--cor-azul-escuro);
+    margin-right: 5px;
+    padding: 1px;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border-radius: 10px;
+}
+
+.instagram-container a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.instagram-container a:focus,
+.linkedin-container-contato a:focus,
+.facebook-container-contato a:focus {
+    color: var(--cor-azul-escuro);
+}
+
+
+.linkedin-container-contato {
+    height: 30px;
+}
+
+.linkedin-container-contato img {
+    padding: 5px;
+    margin-right: 5px;
+    height: 100%;
+    background-color: #0e76a8;
+    border-radius: 10px;
+}
+
+.linkedin-container-contato a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.facebook-container-contato {
+    height: 30px;
+}
+
+.facebook-container-contato img {
+    height: 100%;
+    padding: 2px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #3b5998;
+}
+
+.facebook-container-contato a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
