@@ -1,27 +1,26 @@
 .area-atuacao {
-    padding: 50px 25px;
+    padding: 3.125rem 1.5625rem; /* 50px 25px */
     width: 100%;
     background-color: var(--cor-creme);
 }
 
-
 .caixa-geral {
-    margin-top: 40px;
+    margin-top: 2.5rem; /* 40px */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
 }
 
 .borda-dourada {
-    border-top: var(--cor-dourado) 5px solid;
-    border-radius: 10px;
+    border-top: var(--cor-dourado) 0.3125rem solid; /* 5px */
+    border-radius: 0.625rem; /* 10px */
 }
 
 .caixa {
-    padding: 15px;
-    border: var(--cor-fundo-cinza) 2px solid;
-    border-radius: 10px;
-    box-shadow: 0 8px 19px -8px #afafaf;
+    padding: 0.9375rem; /* 15px */
+    border: var(--cor-fundo-cinza) 0.125rem solid; /* 2px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.5rem 1.1875rem -0.5rem #afafaf; /* 0 8px 19px -8px */
     height: 100%;
     width: 100%;
 }
@@ -31,65 +30,66 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55px;
-    width: 55px;
-    border-radius: 50px;
+    height: 3.4375rem; /* 55px */
+    width: 3.4375rem; /* 55px */
+    border-radius: 3.125rem; /* 50px */
 }
 
 .logo-caixa img {
-    height: 25px;
+    height: 1.5625rem; /* 25px */
 }
 
 .textos-caixa-areaAtuacao {
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 1.5625rem; /* 25px */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .titulo-caixa {
     font-family: "times", Arial, Helvetica, sans-serif;
     color: var(--cor-texto);
     font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 0.625rem; /* 10px */
 }
 
 .texto-caixa-areaAtuacao {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 1rem;
     color: #7a7a7a;
 }
 
 .titulo-area h6 {
     width: 100%;
+    font-size: 1rem;
 }
 
 .destaque-areaAtuacao {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 0.4375rem; /* 7px */
 }
 
 .container-destaqueArea {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
 }
 
 .container-destaqueArea img {
-    height: 8px;
+    height: 0.5rem; /* 8px */
     filter: invert(94%) sepia(57%) saturate(7348%) hue-rotate(315deg) brightness(83%) contrast(88%);
 }
 
 .destaque-texto {
     color: var(--cor-texto);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
 }
 
 .container-saibaMais {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 1.25rem; /* 20px */
+    margin-bottom: 0.625rem; /* 10px */
 }
 
 .botao-saibaMais {
@@ -97,59 +97,59 @@
     background-color: var(--cor-dourado);
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     color: #192841;
-    padding: 5px;
+    padding: 0.3125rem; /* 5px */
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px */
 }
+
 .botao-saibaMais:hover {
-    background-color:var(--cor-marrom-escuro);
-    color:#000;
+    background-color: var(--cor-marrom-escuro);
+    color: #000;
 }
 
 .container-saibaMais img {
-    height: 10px;
-    width: 18px;
+    height: 0.625rem; /* 10px */
+    width: 1.125rem; /* 18px */
 }
-
-@media (max-width: 1200px) {}
 
 @media (max-width: 900px) {
     .caixa-geral {
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 650px) {
     .titulo-caixa {
-        font-size:19px;
+        font-size: 1.1875rem; /* 19px */
     }
     .texto-caixa-areaAtuacao {
-        font-size:15px;
+        font-size: 0.9375rem; /* 15px */
     }
 }
 
 @media (max-width: 480px) {
     .caixa-geral {
-        display:flex;
-        flex-wrap:wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
     .titulo-caixa {
-        font-size:23px;
+        font-size: 1.4375rem; /* 23px */
     }
     .titulo-area h6 {
-        font-size: 17px;
+        font-size: 1.0625rem; /* 17px */
     }
     .texto-caixa-areaAtuacao {
-        font-size:16px;
+        font-size: 1rem; /* 16px */
     }
     .destaque-texto {
-        font-size:17px;
+        font-size: 0.875rem; /* 14px */
     }
 }
+
 @media (max-width: 300px) {
     .kamila-img {
-        width:100%;
+        width: 100%;
     }
 }
