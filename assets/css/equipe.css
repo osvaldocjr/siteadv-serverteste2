@@ -80,8 +80,7 @@
         font-size: 1.0625rem; /* 17px */
     }
 }
-
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .titulo-caixa-equipe {
         font-size: 1.25rem; /* 20px */
     }
@@ -89,7 +88,20 @@
     .titulo-area h6 {
         font-size: 1.125rem; /* 18px */
     }
+    .titulo-caixa-equipe {
+        font-size: 1rem; /* 16px */
+    }
 
+    .texto-dourado {
+        font-size: 1.08rem; /* 17px */
+    }
+
+    .texto-equipe {
+        font-size: 1rem; /* 15px */
+    }
+}
+
+@media (max-width: 700px) {
     .container-equipe {
         gap: 1.875rem; /* 30px */
         flex-direction: column;
@@ -98,13 +110,5 @@
 
     .caixa-equipe {
         width: 100%;
-    }
-
-    .texto-dourado {
-        font-size: 1.0625rem; /* 17px */
-    }
-
-    .texto-equipe {
-        font-size: 0.9375rem; /* 15px */
     }
 }

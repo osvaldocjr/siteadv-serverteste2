@@ -119,13 +119,18 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media (max-width: 850px) {
+    .texto-caixa-areaAtuacao {
+        font-size: 1.2rem; /* 15px */
+    }
+    .destaque-texto {
+        font-size:1.05rem;
+    }
+}
 
 @media (max-width: 650px) {
     .titulo-caixa {
         font-size: 1.1875rem; /* 19px */
-    }
-    .texto-caixa-areaAtuacao {
-        font-size: 0.9375rem; /* 15px */
     }
 }
 
@@ -139,12 +144,6 @@
     }
     .titulo-area h6 {
         font-size: 1.0625rem; /* 17px */
-    }
-    .texto-caixa-areaAtuacao {
-        font-size: 1rem; /* 16px */
-    }
-    .destaque-texto {
-        font-size: 0.875rem; /* 14px */
     }
 }
 
