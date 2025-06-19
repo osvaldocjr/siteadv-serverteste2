@@ -93,4 +93,10 @@
     .caixa-equipe {
         width:100%;
     }
+    .texto-dourado {
+        font-size:17px;
+    }
+    .texto-equipe {
+        font-size:15px;
+    }
 }

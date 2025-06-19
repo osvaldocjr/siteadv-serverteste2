@@ -135,9 +135,17 @@
         display:flex;
         flex-wrap:wrap;
     }
-
+    .titulo-caixa {
+        font-size:23px;
+    }
     .titulo-area h6 {
         font-size: 17px;
+    }
+    .texto-caixa-areaAtuacao {
+        font-size:16px;
+    }
+    .destaque-texto {
+        font-size:17px;
     }
 }
 @media (max-width: 300px) {
