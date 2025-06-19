@@ -27,13 +27,12 @@
                             <img src="assets/img/logo-con.png" alt="Logo">
                         </a>
                     </div>
-                    <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
-                    <label for="checkbox" class="label-menu">
-                        Menu
-                        <span class="hamburger"></span>
-                    </label>
                     <nav class="menu-direita">
-                        <ul class="nav-ul">
+                        <button class="btn-mobile" aria-haspopup="true" aria-label="Abrir Menu" aria-controls="menu" aria-expanded="false">
+                            Menu
+                            <span class="hamburger"></span>
+                        </button>
+                        <ul class="nav-ul" role="menu">
                             <li>
                                 <a href="#sobreNos">
                                     sobre nós
@@ -85,7 +84,7 @@
     </header>
 
     <main>
-        <div class="cor-marrom">
+        <div class="cor-preto">
             <div class="inicio centralizador-main">
                 <section class="inicioSection" id="inicio">
                     <img src="assets/img/asdasdasdasdwwwww.png" alt="" srcset="">
@@ -100,7 +99,7 @@
             </div>
         </div>
 
-        <div class="cor-bege-claro">
+        <div class="cor-cinza">
             <div class="centralizador-main">
                 <section class="sobre-nos" id="sobreNos">
                     <div class="imagem-sobreNos">
@@ -184,7 +183,7 @@
             </div>
         </div>
 
-        <div class="cor-creme">
+        <div class="cor-branco">
             <div class="centralizador-main">
                 <section class="area-atuacao" id="areaAtuacao">
                     <div class="titulo-area">
@@ -457,7 +456,7 @@
             </div>
         </div>
 
-        <div class="cor-bege-claro">
+        <div class="cor-cinza">
             <div class="centralizador-main">
                 <section class="equipe" id="equipe">
                     <div class="titulo-area">
@@ -469,7 +468,7 @@
                     <div class="container-equipe">
                         <div class="caixa-equipe">
                             <div class="caixa-imagem-equipe">
-                                <img src="assets/img/kamila.png" alt="Kamila" class="kamila-img">
+                                <img src="assets/img/kamila.png" alt="Kamila">
                             </div>
                             <div class="textos-caixa-equipe">
                                 <h6 class="titulo-caixa-equipe">
@@ -500,7 +499,7 @@
                             </div>
                             <div class="textos-caixa-equipe">
                                 <h6 class="titulo-caixa-equipe">
-                                    Dra. Kariny Meneghel – OAB/SC 42.121
+                                    Kariny Meneghel – OAB/SC 42.121
                                 </h6>
                                 <span class="texto-dourado">
                                     Sócia-fundadora
@@ -526,7 +525,7 @@
             </div>
         </div>
 
-        <div class="cor-creme">
+        <div class="cor-branco">
             <div class="centralizador-main">
                 <section class="contato" id="contato">
                     <div class="titulo-area">
@@ -565,5 +564,5 @@
         </div>
     </main>
 </body>
-
+    <script type="module" src="assets/js/nav-menu.js"></script>
 </html>
