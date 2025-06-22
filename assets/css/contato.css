@@ -1,17 +1,65 @@
 .contato {
     padding: 50px 20px;
-    background-color:var(--cor-creme);
+    background-color: var(--cor-creme);
+}
+
+.container-contato {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+iframe {
+    height: 250px;
+    width: 350px;
+}
+
+.enderecoMapa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.titulo-mapa {
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.texto-mapa {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .redeSociais-contato {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    gap: 25px;
 }
 
-.instagram-container {
-    height: 40px;
-    width: 175px;
+.whatsapp-img {
+    height: 30px;
+    margin-right: 0.6rem;
+}
+
+.email-img {
+    height: 20px;
+    margin-right: 0.6rem;
+}
+
+.telefone {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.telefone-img {
+    height: 30px;
+    margin-right: 0.8rem;
 }
 
 .instagram-container img {
@@ -20,28 +68,11 @@
 
 .instagram-container img {
     color: var(--cor-azul-escuro);
-    margin-right: 5px;
+    margin-right: 0.8rem;
     padding: 1px;
     background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     border-radius: 10px;
 }
-
-.instagram-container a {
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    font-weight: 500;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.instagram-container a:focus,
-.linkedin-container-contato a:focus,
-.facebook-container-contato a:focus {
-    color: var(--cor-azul-escuro);
-}
-
 
 .linkedin-container-contato {
     height: 30px;
@@ -49,20 +80,10 @@
 
 .linkedin-container-contato img {
     padding: 5px;
-    margin-right: 5px;
+    margin-right: 0.8rem;
     height: 100%;
     background-color: #0e76a8;
     border-radius: 10px;
-}
-
-.linkedin-container-contato a {
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    font-weight: 500;
-    height: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .facebook-container-contato {
@@ -72,12 +93,12 @@
 .facebook-container-contato img {
     height: 100%;
     padding: 2px;
-    margin-right: 5px;
+    margin-right: 0.8rem;
     border-radius: 10px;
     background-color: #3b5998;
 }
 
-.facebook-container-contato a {
+.texto-contato {
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
@@ -85,4 +106,42 @@
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 950px) {
+    .container-contato {
+        width: 100%;
+    }
+}
+
+@media (max-width: 725px) {
+    .container-contato {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .container-endereco {
+        width: 100%;
+        text-align: center;
+    }
+
+    iframe {
+        width: 90%;
+    }
+    .span-rodape {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 330px) {
+    .texto-contato {
+        font-size: 1.05rem;
+    }
 }

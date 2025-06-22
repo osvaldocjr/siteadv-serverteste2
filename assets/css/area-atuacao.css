@@ -106,7 +106,7 @@
 
 .botao-saibaMais:hover {
     background-color: var(--cor-marrom-escuro);
-    color: #000;
+    color: #fff;
 }
 
 .container-saibaMais img {

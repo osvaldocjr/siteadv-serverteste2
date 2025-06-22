@@ -6,7 +6,6 @@
 .nuvem-whatsapp {
     height:50px;
     width:50px;
-    background-color:#25d366;
 }
 .whatsapp-contato {
     padding: 0 20px 15px 0;
@@ -14,14 +13,45 @@
     width: 1200px;
     position:fixed;
     display: flex;
-    justify-content: end;
+    justify-content:end;
+    gap:1.1rem;
+}
+
+.icon-flutuante {
+    height:100%;
+    animation: flutuar 2s ease-in-out infinite;
+}
+.icon-flutuante:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius:50%;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
 }
 
 @media (max-width: 1200px) {
     .whatsapp-contato  {
-        width:80px;
+        width:150px;
         height:60px;
         position: fixed;
         right:0;
+    }
+}
+@media (max-width: 830px) {
+    .whatsapp-contato  {
+        width:auto;
+        height:auto;
+        bottom:1.5rem;
+        right:-1rem;
+    }
+}
+@media (max-width: 700px) {
+    .whatsapp-contato  {
+        width:auto;
+        height:auto;
+        bottom:2rem;
     }
 }
