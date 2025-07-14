@@ -13,8 +13,8 @@
 }
 
 .centro {
+    padding: 0 10px;
     width: 100%;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,6 @@
 }
 
 .menu-direita {
-    width: 50%;
     display: flex;
 }
 
@@ -33,7 +32,7 @@
     display: flex;
     list-style: none;
     width: 100%;
-    justify-content: space-around;
+    gap:20px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -42,10 +41,10 @@
     text-decoration: none;
     display: block;
     border-bottom: transparent 1px solid;
-    color: var(--cor-laranja-queimado);
+    color: var(--cor-fundo-branco);
     font-family: "centaur-regular";
     transition: ease-in-out 0.2s;
-    font-size: 21px;
+    font-size: 1.1rem;
 }
 
 .nav-ul li a:hover {
@@ -61,19 +60,15 @@
 }
 
 .instagram img {
-    height: 28px;
+    height: 22px;
 }
 
 .whatsapp {
-    padding: 0 15px;
+    padding-right:10px;
 }
 
 .whatsapp img {
-    height: 28px;
-}
-
-.icon {
-    filter: invert(27%) sepia(78%) saturate(4343%) hue-rotate(334deg) brightness(81%) contrast(86%);
+    height: 22px;
 }
 
 .icon:hover {
@@ -102,6 +97,31 @@
         transition: 0.5s;
         overflow-y:hidden;
     }
+    .nav-ul li {
+        margin:20px 0;
+        border-top:1px solid var(--cor-dourado);
+        border-bottom:1px solid var(--cor-dourado);
+    }
+    .nav-ul li:hover {
+        border-top:var(--cor-bege-claro) 1px solid;
+    }
+    .menu-redeSocial {
+        justify-content: center;
+        gap:20px;
+    }
+    .menu-redeSocial .whatsapp a,
+    .menu-redeSocial .instagram a {
+        border-top:none;
+    }
+    .menu-redeSocial .whatsapp a:hover,
+    .menu-redeSocial .instagram a:hover {
+        border-bottom:none;
+    }
+    .menu-redeSocial .whatsapp a img,
+    .menu-redeSocial .instagram a img {
+        height:40px;
+    }
+
 
     .ativado {
         height: calc(100vh - 110px);
@@ -111,12 +131,12 @@
     .nav-ul li a {
         font-family: sans-serif;
         padding: 15px 0;
-        border-top: var(--cor-dourado) 1px solid;
         font-size: 27px;
         text-align: center;
     }
 
     .nav-ul li:nth-last-child(1) {
+        border-top:var(--cor-dourado) 1px solid;
         border-bottom: var(--cor-dourado) 1px solid;
     }
 

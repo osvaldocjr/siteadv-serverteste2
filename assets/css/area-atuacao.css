@@ -1,62 +1,124 @@
 .area-atuacao {
-    padding: 3.125rem 1.5625rem; /* 50px 25px */
+    padding: 3.125rem 1.5625rem;
+    /* 50px 25px */
     width: 100%;
     background-color: var(--cor-creme);
 }
 
 .caixa-geral {
-    margin-top: 2.5rem; /* 40px */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem; /* 20px */
-}
-
-.borda-dourada {
-    border-top: var(--cor-dourado) 0.3125rem solid; /* 5px */
-    border-radius: 0.625rem; /* 10px */
+    margin-top: 2.5rem;
+    /* 40px */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .caixa {
-    padding: 0.9375rem; /* 15px */
-    border: var(--cor-fundo-cinza) 0.125rem solid; /* 2px */
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0.5rem 1.1875rem -0.5rem #afafaf; /* 0 8px 19px -8px */
-    height: 100%;
-    width: 100%;
-}
-
-.logo-caixa {
-    background-color: var(--cor-marrom-escuro);
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    height: 3.4375rem; /* 55px */
-    width: 3.4375rem; /* 55px */
-    border-radius: 3.125rem; /* 50px */
+    padding: 1.25rem;
+    /* 20px */
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
-.logo-caixa img {
-    height: 1.5625rem; /* 25px */
+.juridico-empresa {
+    background-image: url('../img/setor-juridico-empresa.png');
 }
 
-.textos-caixa-areaAtuacao {
-    margin-top: 1.5625rem; /* 25px */
-    margin-bottom: 1.25rem; /* 20px */
+.direito-societario {
+    background-image: url("../img/banner-direito-societario.png");
+}
+
+.direito-trabalhista-empresas {
+    background-image: url("../img/banner-direito-trabalhista-empresas.png");
+}
+
+.juridico-empresa,
+.direito-societario,
+.direito-trabalhista-empresas {
+    min-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    color: #fff;
+    transition: filter 0.3s ease;
+}
+
+.juridico-empresa::after,
+.direito-societario::after,
+.direito-trabalhista-empresas::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    /* ou menos */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    z-index: 0;
+}
+
+.juridico-empresa::before,
+.direito-societario::before,
+.direito-trabalhista-empresas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* overlay escuro */
+    z-index: 0;
+    transition: background-color 0.3s ease;
+}
+
+.textos-caixa-areaAtuacao,
+.texto-saiba-mais {
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.botao-saibaMais:hover .juridico-empresa,
+.botao-saibaMais:hover .direito-societario,
+.botao-saibaMais:hover .direito-trabalhista-empresas {
+    filter: brightness(1.15);
+    /* Clareia a imagem de fundo */
+    background-color: rgb(255, 255, 255);
+    /* Clareia o overlay escuro */
+    font-size: 1.25rem;
+    /* 20px */
+}
+
+.botao-saibaMais:hover .titulo-caixa,
+.botao-saibaMais:hover .texto-saiba-mais {
+    border-bottom: 2px solid var(--cor-dourado);
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .titulo-caixa {
+    border-bottom: 2px solid transparent;
     font-family: "times", Arial, Helvetica, sans-serif;
-    color: var(--cor-texto);
+    color: #fff;
     font-weight: 600;
-    font-size: 1.25rem; /* 20px */
-    margin-bottom: 0.625rem; /* 10px */
-}
-
-.texto-caixa-areaAtuacao {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #7a7a7a;
+    font-size: 1.25rem;
+    /* 20px */
 }
 
 .titulo-area h6 {
@@ -64,86 +126,42 @@
     font-size: 1rem;
 }
 
-.destaque-areaAtuacao {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4375rem; /* 7px */
-}
-
-.container-destaqueArea {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem; /* 10px */
-}
-
-.container-destaqueArea img {
-    height: 0.5rem; /* 8px */
-    filter: invert(94%) sepia(57%) saturate(7348%) hue-rotate(315deg) brightness(83%) contrast(88%);
-}
-
-.destaque-texto {
-    color: var(--cor-texto);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.875rem; /* 14px */
-}
-
-.container-saibaMais {
-    margin-top: 1.25rem; /* 20px */
-    margin-bottom: 0.625rem; /* 10px */
-}
-
 .botao-saibaMais {
-    border: none;
-    background-color: var(--cor-dourado);
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9375rem; /* 15px */
-    color: #192841;
-    padding: 0.3125rem; /* 5px */
-    font-weight: 600;
-    border-radius: 1.25rem; /* 20px */
-}
-
-.botao-saibaMais:hover {
-    background-color: var(--cor-marrom-escuro);
+    font-size: 1.1rem;
+    /* 15px */
     color: #fff;
-}
-
-.container-saibaMais img {
-    height: 0.625rem; /* 10px */
-    width: 1.125rem; /* 18px */
-}
-
-@media (max-width: 900px) {
-    .caixa-geral {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 850px) {
-    .texto-caixa-areaAtuacao {
-        font-size: 1.2rem; /* 15px */
-    }
-    .destaque-texto {
-        font-size:1.05rem;
-    }
+    padding: 0.3125rem;
+    /* 5px */
+    font-weight: 600;
+    border-radius: 1.25rem;
+    /* 20px */
+    border-color: transparent;
 }
 
 @media (max-width: 650px) {
     .titulo-caixa {
-        font-size: 1.1875rem; /* 19px */
+        font-size: 1.1875rem;
+        /* 19px */
+    }
+    .area-atuacao {
+        padding: 20px 5px;
     }
 }
 
-@media (max-width: 480px) {
-    .caixa-geral {
-        display: flex;
-        flex-wrap: wrap;
+@media (max-width: 330px) {
+    .container-saibaMais {
+        width:100%;
     }
-    .titulo-caixa {
-        font-size: 1.4375rem; /* 23px */
+    .btn-direito-societario {
+        width:100%;
     }
-    .titulo-area h6 {
-        font-size: 1.0625rem; /* 17px */
+    .juridico-empresa,
+    .direito-societario,
+    .direito-trabalhista-empresas {
+        min-width:auto;
+        width:100%;
     }
 }
 

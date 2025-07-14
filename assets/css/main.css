@@ -1,5 +1,5 @@
 .centralizador-main {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -10,7 +10,7 @@
 .whatsapp-contato {
     padding: 0 20px 15px 0;
     bottom: 0;
-    width: 1200px;
+    width: 1280px;
     position:fixed;
     display: flex;
     justify-content:end;
@@ -32,7 +32,7 @@
     100% { transform: translateY(0); }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .whatsapp-contato  {
         width:150px;
         height:60px;
@@ -53,5 +53,33 @@
         width:auto;
         height:auto;
         bottom:2rem;
+    }
+}
+@media (max-width: 650px) {
+    .whatsapp-contato {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.1rem;
+        padding: 0;
+        width: auto;
+    }
+
+    .icon-flutuante {
+        height: 50px;
+        width: 50px;
+        animation: flutuar 2s ease-in-out infinite;
+        z-index: 9999;
+        position: relative;
+    }
+
+    .nuvem-whatsapp {
+        height: 50px;
+        width: 50px;
+        z-index: 9999;
     }
 }

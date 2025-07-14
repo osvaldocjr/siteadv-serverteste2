@@ -1,6 +1,7 @@
 footer {
     background-color:var(--cor-marrom-escuro);
     text-align:center;
+    border-top:1px solid #4A4A4A;
 }
 .span-rodape {
     color:#fff;
