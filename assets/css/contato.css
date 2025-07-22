@@ -34,14 +34,14 @@ iframe {
 }
 
 .titulo-mapa {
-    color:#000;
+    color:#fff;
     font-size: 1.4rem;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
 .texto-mapa {
-    color:#000;
+    color:#fff;
     display:flex;
     flex-direction:column;
     gap:5px;
@@ -166,6 +166,9 @@ iframe {
 
     .span-rodape {
         font-size: 1.2rem;
+    }
+    .container-redeSociais-contato {
+        width:100%;
     }
 }
 

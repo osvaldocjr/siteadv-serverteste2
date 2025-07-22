@@ -99,8 +99,8 @@
     }
     .nav-ul li {
         margin:20px 0;
-        border-top:1px solid var(--cor-dourado);
-        border-bottom:1px solid var(--cor-dourado);
+        border-top:1px solid var(--cor-laranja-queimado);
+        border-bottom:1px solid var(--cor-laranja-queimado);
     }
     .nav-ul li:hover {
         border-top:var(--cor-bege-claro) 1px solid;
@@ -148,12 +148,12 @@
         border:none;
         background:none;
         cursor:pointer;
-        color:var(--cor-dourado);
+        color:var(--cor-laranja-queimado);
     }
     .hamburger {
         display:block;
         width:20px;
-        border-top:var(--cor-dourado) 2px solid;
+        border-top:var(--cor-laranja-queimado) 2px solid;
     }
     .hamburger::after,
     .hamburger::before {

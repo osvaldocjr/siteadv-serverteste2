@@ -127,6 +127,7 @@
 }
 
 .botao-saibaMais {
+    width:350px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
@@ -147,6 +148,15 @@
     }
     .area-atuacao {
         padding: 20px 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .botao-saibaMais {
+        width:100%;
+    }
+    .direito-societario {
+        width:100%;
     }
 }
 

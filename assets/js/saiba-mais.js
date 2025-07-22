@@ -63,7 +63,7 @@ document.querySelector('.btn-consultoria-juridica').addEventListener('click', fu
                         Suporte Contínuo ao Negócio:
                     </h6> 
                     <p class="texto-modal">
-                        Atuamos como parceiros jurídicos do dia a dia da empresa, prontos para esclarecer 
+                        Atuamos como parceiros jurídicos no dia a dia da empresa, prontos para esclarecer 
                     dúvidas e apoiar nas mais diversas questões legais.
                     </p>
                 </li>
