@@ -1,12 +1,16 @@
 .inicio {
-    height:calc(100vh - 110px);
+    height: calc(100vh - 110px);
+    overflow: hidden;
 }
+
 .inicioSection {
-    height:100%;
+    height: 100%;
+    overflow: hidden;
 }
+
 .inicioSection img {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
 
 #back-to-top {
@@ -21,7 +25,7 @@
     height: 3rem;
     font-size: 1.5rem;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: none;
     transition: opacity 0.3s ease;
 }
@@ -30,9 +34,62 @@
     background-color: #555;
 }
 
+.video-banner {
+    max-height: calc(100vh - 955px);
+    min-height: calc(100vh - 110px);
+    width: 100vw;
+    overflow: hidden;
+}
+
+.video-desktop {
+    display: block;
+}
+.video-ipad {
+    display: none;
+}
+.video-celular {
+    display: none;
+}
+.video-celular source {
+    width:10vw;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 @media (max-width: 1200px) {
     #back-to-top {
-        width:50px;
+        width: 50px;
+    }
 }
+
+@media (max-width: 1280px) {
+    .video-desktop {
+        display: none;
+    }
+
+    .video-ipad {
+        display: block;
+    }
+
+    .video-celular {
+        display: none;
+    }
+}
+@media (max-width: 685px) {
+    .video-desktop {
+        display: none;
+    }
+
+    .video-ipad {
+        display: none;
+    }
+
+    .video-celular {
+        display: block;
+    }
 }
