@@ -28,6 +28,24 @@ body.modal-aberto {
     position: relative;
     color: #333;
     font-family: 'Arial', sans-serif;
+    text-align: justify;
+    hyphens: auto;
+}
+.modal-content::before {
+    content: "";
+    position: fixed; /* 🔥 fixa a marca d'água */
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 55%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/logo-con2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.30;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .caixa-btn-fechar {
@@ -67,4 +85,10 @@ body.modal-aberto {
     font-family:sans-serif;
     font-weight:500;
     font-size:1rem;
+}
+
+@media (max-width: 510px) {
+    .titulo-modal {
+        text-align: center;
+    }
 }

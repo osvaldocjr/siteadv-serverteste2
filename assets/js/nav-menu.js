@@ -38,3 +38,29 @@ window.onscroll = function () {
 btn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+
+
+
+
+
+
+
+
+const floatingButtons = document.querySelector('.whatsapp-contato');
+const footer = document.querySelector('footer');
+
+window.addEventListener('scroll', () => {
+  const footerTop = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (footerTop < windowHeight) {
+    // Se o rodapé estiver visível, sobe os botões
+    const overlap = windowHeight - footerTop;
+    floatingButtons.style.bottom = `${overlap + 20}px`;
+  } else {
+    // Posição padrão
+    floatingButtons.style.bottom = '20px';
+  }
+});

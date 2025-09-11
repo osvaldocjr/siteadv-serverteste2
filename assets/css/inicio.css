@@ -51,7 +51,7 @@
     display: none;
 }
 .video-celular source {
-    width:10vw;
+    width:100vw;
 }
 
 video {

@@ -1,122 +1,165 @@
 #sobreNos {
-    padding: 3rem 0; /* Alterei para rem */
+    padding: 3rem 0;
+    /* Alterei para rem */
     width: 100%;
     background-color: var(--cor-bege-claro);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
 .sobre-nos-container {
-    padding: 0 1.875rem; /* Alterei para rem */
+    padding: 0 1rem;
+    /* Alterei para rem */
     display: flex;
 }
 
 .imagem-sobreNos {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .titulo-sobreNos h2 {
     font-family: "times", Arial, Helvetica, sans-serif;
     color: var(--cor-titulo);
-    font-size: 1.5rem; /* Alterei para rem */
+    font-size: 1.5rem;
+    /* Alterei para rem */
     font-weight: 600;
 }
 
 .texto-sobreNos p {
     font-family: Arial, sans-serif;
     color: var(--cor-texto);
-    font-size: 1.125rem; /* Alterei para rem */
+    font-size: 1.125rem;
+    /* Alterei para rem */
     line-height: 1.4;
-    margin-bottom: 0.9375rem; /* Alterei para rem */
+    margin-bottom: 0.9375rem;
+    /* Alterei para rem */
+    text-align:justify;
+    hyphens: auto;
+    word-break: break-word;
 }
+
 .texto-sobreNos p:last-child {
     margin-bottom: 0;
 }
 
 .barra-dourada {
-    margin: 0.9375rem 0; /* Alterei para rem */
+    margin: 0.9375rem 0;
+    /* Alterei para rem */
     height: 4px;
-    width: 3.75rem; /* Alterei para rem */
+    width: 3.75rem;
+    /* Alterei para rem */
     background-color: var(--cor-dourado);
 }
 
 .certificacao-caixa {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.25rem; /* Alterei para rem */
+    gap: 1.25rem;
+    /* Alterei para rem */
 }
 
 .titulo-certificado img {
-    height: 1.25rem; /* Alterei para rem */
+    height: 1.25rem;
+    /* Alterei para rem */
 }
+
 .titulo-certificado {
-    margin-bottom: 0.5rem; /* Alterei para rem */
+    margin-bottom: 0.5rem;
+    /* Alterei para rem */
 }
 
 .titulo-span {
     font-family: "times", Arial, Helvetica, sans-serif;
     color: #2B2B2B;
     font-weight: 700;
-    font-size: 1.125rem; /* Alterei para rem */
+    font-size: 1.125rem;
+    /* Alterei para rem */
 }
+
 .texto-span {
     font-family: sans-serif;
-    font-weight:500;
+    font-weight: 500;
     color: var(--cor-marrom-escuro);
-    font-size: 0.9375rem; /* Alterei para rem */
+    font-size: 0.9375rem;
+    /* Alterei para rem */
 }
 
 .experiencia-sobreNos,
 .equipe-sobreNos,
 .atendimento-sobreNos,
 .compromisso-sobreNos {
-    padding: 0.625rem 0.625rem; /* Alterei para rem */
+    padding: 0.625rem 0.625rem;
+    /* Alterei para rem */
     border: 1px solid #C9A74B;
-    border-radius: 1.25rem; /* Alterei para rem */
+    border-radius: 1.25rem;
+    /* Alterei para rem */
 }
 
-@media (max-width: 75rem) { /* 1200px */
+@media (max-width: 75rem) {
+
+    /* 1200px */
     .imagem-sobreNos {
         width: 100%;
     }
 }
 
-@media (max-width: 60rem) { /* 960px */
+@media (max-width: 60rem) {
+
+    /* 960px */
     .imagem-sobreNos img {
         width: 100%;
     }
+
     .imagem-sobreNos {
         width: 80%;
-        box-shadow: 0.0625rem 0.5rem 1.1875rem -0.125rem #afafaf; /* Alterei para rem */
-        border-radius: 0.625rem; /* Alterei para rem */
+        box-shadow: 0.0625rem 0.5rem 1.1875rem -0.125rem #afafaf;
+        /* Alterei para rem */
+        border-radius: 0.625rem;
+        /* Alterei para rem */
     }
+
     #sobreNos {
-        gap: 3.125rem; /* Alterei para rem */
+        gap: 3.125rem;
+        /* Alterei para rem */
         align-items: center;
         flex-direction: column;
     }
 }
 
-@media (max-width: 34.375rem) { /* 550px */
+@media (max-width: 34.375rem) {
+
+    /* 550px */
     .certificacao-caixa {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media (max-width: 25rem) { /* 400px */
+@media (max-width: 25rem) {
+
+    /* 400px */
     .titulo-sobreNos h2 {
-        font-size: 1.3125rem; /* Alterei para rem */
+        font-size: 1.3125rem;
+        /* Alterei para rem */
     }
+
     .texto-sobreNos p {
-        font-size: 1.0625rem; /* Alterei para rem */
+        font-size: 1.0625rem;
+        /* Alterei para rem */
     }
+
     .titulo-span {
         font-weight: 600;
-        font-size: 1.125rem; /* Alterei para rem */
+        font-size: 1.125rem;
+        /* Alterei para rem */
     }
+
     .texto-span {
-        font-size: 1.0625rem; /* Alterei para rem */
+        font-size: 1.0625rem;
+        /* Alterei para rem */
     }
 }
