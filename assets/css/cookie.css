@@ -1,3 +1,7 @@
+.main-politica {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 /* Esconde o checkbox */
 .switch input {
   display: none;
@@ -81,6 +85,14 @@
     font-size:.85rem;
     color:#fff;
     font-weight:500;
+}
+.legenda-cookie-vermelho {
+  font-weight: 600;
+  color:#f00;
+}
+.legenda-cookie-verde {
+  font-weight: 600;
+  color:#080;
 }
 
 @media (max-width:750px) {
