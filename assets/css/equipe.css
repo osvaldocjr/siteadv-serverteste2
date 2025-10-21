@@ -1,6 +1,11 @@
 .equipe {
-    padding: 3.125rem 1.25rem; /* 50px 20px */
+    padding: 0.35rem 0;
+    width:100%;
     background-color: var(--cor-bege-claro);
+}
+
+.equipe .titulo-area h3 {
+    font-size:1.5rem;
 }
 
 .container-equipe {
@@ -11,7 +16,7 @@
 .caixa-equipe {
     border-radius: 0.625rem; /* 10px */
     box-shadow: 0 0.5rem 1.1875rem -0.5rem #afafaf; /* 0 8px 19px -8px */
-    width: 40%;
+    width:45%;
 }
 
 .caixa-imagem-equipe {

@@ -1,6 +1,8 @@
 .inicio {
     height: calc(100vh - 110px);
     overflow: hidden;
+    border: 5px solid var(--cor-dourado);
+    margin-top:110px;
 }
 
 .inicioSection {

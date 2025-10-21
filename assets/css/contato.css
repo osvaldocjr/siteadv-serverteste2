@@ -9,21 +9,17 @@
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 250px;
 }
 
 .container-contato {
     display: flex;
+    flex-direction:column;
     margin: auto;
 }
 
 .container-redeSociais-contato {
     margin: 50px 0;
-    width: 70%;
-}
-
-.container-endereco {
-    width: 60%;
 }
 
 .enderecoMapa {
@@ -140,7 +136,7 @@ iframe {
 
     .container-redeSociais-contato {
         margin-top: 30px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     iframe {
@@ -152,7 +148,6 @@ iframe {
     .container-contato {
         flex-direction: column;
         align-items: center;
-        gap: 50px;
     }
 
     .container-endereco {

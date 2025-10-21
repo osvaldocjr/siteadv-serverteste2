@@ -1,12 +1,16 @@
 #sobreNos {
+    height: calc(100vh - 100px);
     padding: 3rem 0;
     /* Alterei para rem */
     width: 100%;
     background-color: var(--cor-bege-claro);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
+}
+
+.imagem-sobre-nos {
+    width: 25rem;
 }
 
 .sobre-nos-container {
@@ -17,8 +21,10 @@
 
 .imagem-sobreNos {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0.8rem;
 }
 
 .titulo-sobreNos h2 {
@@ -37,7 +43,7 @@
     line-height: 1.4;
     margin-bottom: 0.9375rem;
     /* Alterei para rem */
-    text-align:justify;
+    text-align: justify;
     hyphens: auto;
     word-break: break-word;
 }
@@ -56,8 +62,8 @@
 }
 
 .certificacao-caixa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.25rem;
     /* Alterei para rem */
 }
@@ -99,6 +105,56 @@
     /* Alterei para rem */
 }
 
+.btn-escritorio-saiba-mais-desktop,
+.btn-escritorio-saiba-mais-tablet {
+    display: none;
+}
+
+.btn-escritorio-saiba-mais-desktop:hover,
+.btn-escritorio-saiba-mais-tablet {
+    color: var(--cor-dourado);
+    background-color: var(--cor-texto);
+}
+
+.c {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--cor-creme);
+    max-width: 800px;
+    width: 100%;
+    padding: 10px 30px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    max-height: 90vh;
+    position: relative;
+    color: var(--cor-texto);
+    font-size: 1.125rem;
+    line-height: 1.4;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+    hyphens: auto;
+}
+
+@media (max-width:1200px) {
+    .texto-saiba-mais-escritorio-desktop {
+        display: none;
+    }
+
+    .btn-escritorio-saiba-mais-desktop {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: var(--cor-laranja-queimado);
+        color: #fff;
+        border: transparent;
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 75rem) {
 
     /* 1200px */
@@ -107,28 +163,48 @@
     }
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 960px) {
 
     /* 960px */
-    .imagem-sobreNos img {
-        width: 100%;
+    .imagem-sobre-nos {
+        display: none;
     }
 
-    .imagem-sobreNos {
-        width: 80%;
-        box-shadow: 0.0625rem 0.5rem 1.1875rem -0.125rem #afafaf;
-        /* Alterei para rem */
-        border-radius: 0.625rem;
-        /* Alterei para rem */
+    .certificacao-caixa {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #sobreNos {
-        gap: 3.125rem;
-        /* Alterei para rem */
-        align-items: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
+
+
+@media (max-width: 815px) {
+    .btn-escritorio-saiba-mais-desktop {
+        display:none;
+    }
+    .btn-escritorio-saiba-mais-tablet {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: var(--cor-laranja-queimado);
+        color: #fff;
+        border: transparent;
+        cursor: pointer;
+    }
+    #sobreNos {
+        height:100%;
+        padding:1rem 0;
+    }
+    .texto-saiba-mais-escritorio-tablet {
+        display:none;
+    }
+}
+
 
 @media (max-width: 34.375rem) {
 

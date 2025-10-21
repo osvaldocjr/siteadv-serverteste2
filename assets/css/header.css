@@ -1,4 +1,8 @@
 .fundo-cabecalho {
+    position: fixed;
+    top: 0;
+    border-bottom:3px solid var(--cor-dourado);
+    z-index:9000;
     height: 110px;
     width: 100%;
     display: flex;
@@ -32,7 +36,7 @@
     display: flex;
     list-style: none;
     width: 100%;
-    gap:20px;
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -64,7 +68,7 @@
 }
 
 .whatsapp {
-    padding-right:10px;
+    padding-right: 10px;
 }
 
 .whatsapp img {
@@ -93,33 +97,39 @@
         height: 0;
         background-color: var(--cor-marrom-escuro);
         z-index: 1000;
-        visibility:hidden;
+        visibility: hidden;
         transition: 0.5s;
-        overflow-y:hidden;
+        overflow-y: hidden;
     }
+
     .nav-ul li {
-        margin:20px 0;
-        border-top:1px solid var(--cor-laranja-queimado);
-        border-bottom:1px solid var(--cor-laranja-queimado);
+        margin: 20px 0;
+        border-top: 1px solid var(--cor-laranja-queimado);
+        border-bottom: 1px solid var(--cor-laranja-queimado);
     }
+
     .nav-ul li:hover {
-        border-top:var(--cor-bege-claro) 1px solid;
+        border-top: var(--cor-bege-claro) 1px solid;
     }
+
     .menu-redeSocial {
         justify-content: center;
-        gap:20px;
+        gap: 20px;
     }
+
     .menu-redeSocial .whatsapp a,
     .menu-redeSocial .instagram a {
-        border-top:none;
+        border-top: none;
     }
+
     .menu-redeSocial .whatsapp a:hover,
     .menu-redeSocial .instagram a:hover {
-        border-bottom:none;
+        border-bottom: none;
     }
+
     .menu-redeSocial .whatsapp a img,
     .menu-redeSocial .instagram a img {
-        height:40px;
+        height: 40px;
     }
 
 
@@ -136,44 +146,49 @@
     }
 
     .nav-ul li:nth-last-child(1) {
-        border-top:var(--cor-dourado) 1px solid;
+        border-top: var(--cor-dourado) 1px solid;
         border-bottom: var(--cor-dourado) 1px solid;
     }
 
     .btn-mobile {
-        display:flex;
-        gap:8px;
-        padding:8px 16px;
-        font-size:16px;
-        border:none;
-        background:none;
-        cursor:pointer;
-        color:var(--cor-laranja-queimado);
+        display: flex;
+        gap: 8px;
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: var(--cor-laranja-queimado);
     }
+
     .hamburger {
-        display:block;
-        width:20px;
-        border-top:var(--cor-laranja-queimado) 2px solid;
+        display: block;
+        width: 20px;
+        border-top: var(--cor-laranja-queimado) 2px solid;
     }
+
     .hamburger::after,
     .hamburger::before {
-        content:'';
-        display:block;
-        width:20px;
-        height:2px;
-        background-color:currentColor;
-        margin-top:5px;
-        transition:.3s;
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
         position: relative;
     }
+
     .esconde-hamburger .hamburger {
-    border-top-color: transparent;
+        border-top-color: transparent;
     }
+
     .esconde-hamburger .hamburger::before {
-    transform:rotate(135deg);
+        transform: rotate(135deg);
     }
+
     .esconde-hamburger .hamburger::after {
-    transform:rotate(-135deg);
-    top:-6px;
+        transform: rotate(-135deg);
+        top: -6px;
     }
 }

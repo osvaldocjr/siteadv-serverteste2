@@ -41,7 +41,26 @@ btn.addEventListener("click", function () {
 
 
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetID = this.getAttribute("href");
+        const target = document.querySelector(targetID);
 
+        if (!target) return;
+
+        e.preventDefault();
+        const offset = 0;
+
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - bodyRect - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    });
+});
 
 
 
@@ -52,15 +71,15 @@ const floatingButtons = document.querySelector('.whatsapp-contato');
 const footer = document.querySelector('footer');
 
 window.addEventListener('scroll', () => {
-  const footerTop = footer.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
 
-  if (footerTop < windowHeight) {
-    // Se o rodapé estiver visível, sobe os botões
-    const overlap = windowHeight - footerTop;
-    floatingButtons.style.bottom = `${overlap + 20}px`;
-  } else {
-    // Posição padrão
-    floatingButtons.style.bottom = '20px';
-  }
+    if (footerTop < windowHeight) {
+        // Se o rodapé estiver visível, sobe os botões
+        const overlap = windowHeight - footerTop;
+        floatingButtons.style.bottom = `${overlap + 20}px`;
+    } else {
+        // Posição padrão
+        floatingButtons.style.bottom = '20px';
+    }
 });

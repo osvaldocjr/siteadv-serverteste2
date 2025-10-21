@@ -77,7 +77,7 @@ document.querySelector('.btn-consultoria-juridica').addEventListener('click', fu
     // Adiciona o modal ao body
     document.body.appendChild(modal);
 
-     // Fecha no botão de fechar
+    // Fecha no botão de fechar
     modal.querySelector('.btn-fechar').addEventListener('click', function () {
         modal.remove();
         document.body.classList.remove('modal-aberto');
@@ -192,7 +192,7 @@ document.querySelector('.btn-direito-societario').addEventListener('click', func
     document.body.classList.add('modal-aberto');
     document.body.appendChild(modal);
 
-     // Fecha no botão de fechar
+    // Fecha no botão de fechar
     modal.querySelector('.btn-fechar').addEventListener('click', function () {
         modal.remove();
         document.body.classList.remove('modal-aberto');
@@ -302,7 +302,118 @@ document.querySelector('.btn-direito-trabalhista-empresa').addEventListener('cli
     document.body.classList.add('modal-aberto');
     document.body.appendChild(modal);
 
-     // Fecha no botão de fechar
+    // Fecha no botão de fechar
+    modal.querySelector('.btn-fechar').addEventListener('click', function () {
+        modal.remove();
+        document.body.classList.remove('modal-aberto');
+    });
+
+    // Fecha ao clicar fora da caixa
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.remove();
+            document.body.classList.remove('modal-aberto');
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+document.querySelector('.btn-escritorio-saiba-mais-desktop').addEventListener('click', function () {
+    const existingModal = document.querySelector('.modal-overlay');
+    if (existingModal) existingModal.remove();
+
+    const modal = document.createElement('div');
+    modal.classList.add('modal-overlay');
+    modal.innerHTML = `
+        <div class="c">
+            <div class="caixa-btn-fechar">
+                <span class="btn-fechar">
+                    <span>&times;</span>
+                </span>
+            </div>
+            <p>
+            Hoje, MENEGHEL ADVOCACIA se posiciona como um escritório de advocacia de alto padrão,
+            que une expertise técnica, sensibilidade social e compromisso com resultados concretos,
+            oferecendo suporte jurídico sólido tanto para negócios que desejam crescer
+            com segurança, quanto para pessoas que precisam recomeçar com amparo e direção.
+            </p>
+            <p>
+                 Porque acreditamos que ninguém deve caminhar sozinho — e que todo desafio, pessoal ou profissional,
+                pode ser enfrentado com coragem, estratégia e proteção jurídica de excelência.
+            </p>
+        </div>
+    `;
+
+    document.body.classList.add('modal-aberto');
+    document.body.appendChild(modal);
+
+    // Fecha no botão de fechar
+    modal.querySelector('.btn-fechar').addEventListener('click', function () {
+        modal.remove();
+        document.body.classList.remove('modal-aberto');
+    });
+
+    // Fecha ao clicar fora da caixa
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.remove();
+            document.body.classList.remove('modal-aberto');
+        }
+    });
+});
+
+document.querySelector('.btn-escritorio-saiba-mais-tablet').addEventListener('click', function () {
+    const existingModal = document.querySelector('.modal-overlay');
+    if (existingModal) existingModal.remove();
+
+    const modal = document.createElement('div');
+    modal.classList.add('modal-overlay');
+    modal.innerHTML = `
+        <div class="c">
+            <div class="caixa-btn-fechar">
+                <span class="btn-fechar">
+                    <span>&times;</span>
+                </span>
+            </div>
+            <p>
+                Ao longo da nossa trajetória, desafios pessoais vividos pelas sócias fundadoras
+                ressignificaram a nossa missão, ampliando nosso olhar para além dos negócios. Surgiu, então,
+                uma atuação ainda mais humana, atenta e comprometida com a proteção jurídica de famílias
+                atípicas — especialmente no contexto do autismo — e de mulheres em situação de vulnerabilidade, em
+                especial aquelas que enfrentam ou superaram a violência doméstica.
+            </p>
+            <p>
+                Assim nasceram os nossos núcleos especializados em Direito das Famílias e
+                Direitos das Pessoa
+                com Autismo: espaços de acolhimento, orientação estratégica e atuação firme
+                na promoção da justiça, da inclusão e da reconstrução de histórias com autonomia e
+                dignidade.
+            </p>
+            <p>
+            Hoje, MENEGHEL ADVOCACIA se posiciona como um escritório de advocacia de alto padrão,
+            que une expertise técnica, sensibilidade social e compromisso com resultados concretos,
+            oferecendo suporte jurídico sólido tanto para negócios que desejam crescer
+            com segurança, quanto para pessoas que precisam recomeçar com amparo e direção.
+            </p>
+            <p>
+                Porque acreditamos que ninguém deve caminhar sozinho — e que todo desafio, pessoal ou profissional,
+                pode ser enfrentado com coragem, estratégia e proteção jurídica de excelência.
+            </p>
+        </div>
+    `;
+
+    document.body.classList.add('modal-aberto');
+    document.body.appendChild(modal);
+
+    // Fecha no botão de fechar
     modal.querySelector('.btn-fechar').addEventListener('click', function () {
         modal.remove();
         document.body.classList.remove('modal-aberto');
