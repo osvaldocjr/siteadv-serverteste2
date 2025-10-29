@@ -68,7 +68,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 const floatingButtons = document.querySelector('.whatsapp-contato');
-const footer = document.querySelector('footer');
+const footer = document.querySelector('.termos-cookie');
 
 window.addEventListener('scroll', () => {
     const footerTop = footer.getBoundingClientRect().top;
@@ -77,7 +77,7 @@ window.addEventListener('scroll', () => {
     if (footerTop < windowHeight) {
         // Se o rodapé estiver visível, sobe os botões
         const overlap = windowHeight - footerTop;
-        floatingButtons.style.bottom = `${overlap + 20}px`;
+        floatingButtons.style.bottom = `${overlap - 20}px`;
     } else {
         // Posição padrão
         floatingButtons.style.bottom = '20px';

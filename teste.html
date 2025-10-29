@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meneghel Advocacia</title>
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/sobreNos.css">
+    <link rel="stylesheet" href="assets/css/area-atuacao.css">
+    <link rel="stylesheet" href="assets/css/btn-saiba-mais.css">
+    <link rel="stylesheet" href="assets/css/equipe.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+
+
+    <link rel="stylesheet" href="assets/css/teste.css">
+</head>
+
+<body>
+    <header>
+        <div class="fundo-cabecalho">
+            <div class="centralizador">
+                <div class="centro">
+                    <div class="menu-esquerda">
+                        <a href="#inicio">
+                            <img src="assets/img/logo-con.png" alt="Logo">
+                        </a>
+                    </div>
+                    <nav class="menu-direita">
+                        <button class="btn-mobile" aria-haspopup="true" aria-label="Abrir Menu" aria-controls="menu"
+                            aria-expanded="false">
+                            Menu
+                            <span class="hamburger"></span>
+                        </button>
+                        <ul class="nav-ul" role="menu">
+                            <li>
+                                <a href="#sobreNos">
+                                    O ESCRITÓRIO
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#areaAtuacao">
+                                    ÁREAS DE ATUAÇÃO
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#equipe">
+                                    OS ADVOGADOS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contato">
+                                    CONTATO
+                                </a>
+                            </li>
+                            <li class="menu-redeSocial">
+                                <span class="whatsapp">
+                                    <a href="https://wa.me/+5548991950087" target="_blank">
+                                        <img src="assets/img/icons8-whatsapp-48.png" alt="WhatsApp" class="icon">
+                                    </a>
+                                </span>
+                                <span class="instagram">
+                                    <a href="https://www.instagram.com/advocaciameneghel/" target="_blank">
+                                        <img src="assets/img/icons8-instagram-52.png" alt="Instagram" class="icon">
+                                    </a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cor-creme">
+            <div class="centralizador-main">
+                <section class="area-atuacao" id="areaAtuacao" style="margin-top:110px;">
+                    <div class="titulo-area">
+                        <h3>ÁREAS DE ATUAÇÃO</h3>
+                        <div class="barra-dourada-central"></div>
+                        <h6>Contamos com profissionais especializados em diversas áreas do Direito,
+                            prontos para oferecer o suporte jurídico que você precisa.</h6>
+                    </div>
+                    <div class="container-caixa-geral-teste">
+                        <ul class="menu">
+                            <li onmouseover="mostrarConteudo('assets/img/setor-juridico-empresa.png', 'consultoria')">
+                                Consultoria Jurídica para Empresas
+                                <button class="btn-saiba-mais-mobile" onclick="abrirTextoMobile('consultoria')">Saiba
+                                    mais</button>
+                            </li>
+                            <li onmouseover="mostrarConteudo('assets/img/banner-direito-societario.png', 'societario')">
+                                Direito Societário
+                                <button class="btn-saiba-mais-mobile" onclick="abrirTextoMobile('societario')">Saiba
+                                    mais</button>
+                            </li>
+                            <li
+                                onmouseover="mostrarConteudo('assets/img/banner-direito-trabalhista-empresas.png', 'trabalhista')">
+                                Direito Trabalhista para Empresas
+                                <button class="btn-saiba-mais-mobile" onclick="abrirTextoMobile('trabalhista')">Saiba
+                                    mais</button>
+                            </li>
+                            <li
+                                onmouseover="mostrarConteudo('assets/img/banner-elaboração-negociação-contratos.jpg', 'negociacao')">
+                                Elaboração e Negociação de Contratos
+                                <button class="btn-saiba-mais-mobile" onclick="abrirTextoMobile('negociacao')">Saiba
+                                    mais</button>
+                            </li>
+                            <li onmouseover="mostrarConteudo('assets/img/banner-resolucao-conflito.png', 'conflito')">
+                                Resolução de Conflitos
+                                <button class="btn-saiba-mais-mobile" onclick="abrirTextoMobile('conflito')">Saiba
+                                    mais</button>
+                            </li>
+                            <li onmouseover="mostrarConteudo('assets/img/banner-direito-familia.jpg', 'familia')">
+                                Direito das Famílias
+                                <button class="btn-saiba-mais-mobile" onclick="abrirTextoMobile('familia')">Saiba
+                                    mais</button>
+                            </li>
+                            <li
+                                onmouseover="mostrarConteudo('assets/img/banner-direitos-pessoa-autismo.png', 'autismo')">
+                                Direitos da Pessoa com Autismo
+                                <button class="btn-saiba-mais-mobile" onclick="abrirTextoMobile('autismo')">Saiba
+                                    mais</button>
+                            </li>
+                        </ul>
+
+                        <div class="preview">
+                            <img id="imagemPreview" src="" alt="">
+                            <div class="overlay-sombra"></div>
+                            <button id="btnLer" onclick="abrirTexto()">Ler mais</button>
+                        </div>
+                    </div>
+
+                    <!-- MODAL PARA TEXTO -->
+                    <div id="modal" class="modal" style="display:none">
+                        <div class="modal-content">
+                            <span class="fechar" onclick="fecharTexto()">&times;</span>
+                            <div id="textoDescricao"></div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="assets/js/carrosel.js"></script>
+
+</html>

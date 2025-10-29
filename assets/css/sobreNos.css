@@ -13,6 +13,11 @@
     width: 25rem;
 }
 
+.caixa-btn-escritorio {
+    display:flex;
+    justify-content:center;
+}
+
 .sobre-nos-container {
     padding: 0 1rem;
     /* Alterei para rem */

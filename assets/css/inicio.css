@@ -63,7 +63,7 @@ video {
 }
 
 .container-cookie-aviso {
-    border-top:var(--cor-fundo-branco) 1px solid;
+    border-top:var(--cor-dourado) 1px solid;
     width:100%;
     z-index:10000;
     position: fixed;
