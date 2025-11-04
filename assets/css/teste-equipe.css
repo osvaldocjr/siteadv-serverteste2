@@ -1,0 +1,253 @@
+/* ====================================
+   ADVOGADOS - SLIDESHOW
+   ==================================== */
+
+.equipe {
+    padding: 1rem 0;
+    width: 100%;
+    background-color: var(--cor-bege-claro);
+}
+
+.equipe .titulo-area h3 {
+    font-size: 1.5rem;
+}
+
+.container-equipe {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-equipe {
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1.1875rem -0.5rem #afafaf;
+    width: 45%;
+}
+
+.caixa-imagem-equipe {
+    text-align: center;
+    width: 100%;
+    height: 15.625rem;
+    background-color: var(--cor-marrom-escuro);
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.textos-caixa-equipe-redonda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+#btnLerAdv-Kariny,
+#btnLerAdv-Kamila {
+    cursor: pointer;
+    padding: 10px;
+    border: transparent;
+    background-color: var(--cor-marrom-escuro);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--cor-dourado);
+}
+
+#btnLerAdv-Kariny:hover {
+    background-color: #3d3d3d;
+}
+
+.caixa-equipe-redonda {
+    width: 350px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-imagem-equipe-redonda {
+    height: 250px;
+    width: 270px;
+    border: 5px solid var(--cor-marrom-escuro);
+    background-color: var(--cor-marrom-escuro);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-imagem-equipe-redonda img {
+    height: 85%;
+}
+
+.caixa-imagem-equipe img {
+    height: 100%;
+}
+
+.textos-caixa-equipe {
+    padding: 1.25rem;
+}
+
+.titulo-caixa-equipe {
+    font-family: "times", Arial, Helvetica, sans-serif;
+    color: var(--cor-preto);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.texto-dourado {
+    color: var(--cor-marrom-escuro);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+.texto-equipe {
+    margin-top: 0.625rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #3d3d3d;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.certificacao-caixa {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin: 25px auto 0;
+    list-style-type: none;
+}
+
+.titulo-span {
+    font-family: "times", Arial, Helvetica, sans-serif;
+    color: #2B2B2B;
+    font-weight: 700;
+    font-size: 1.125rem;
+    /* Alterei para rem */
+}
+
+.texto-span {
+    font-family: sans-serif;
+    font-weight: 500;
+    color: var(--cor-marrom-escuro);
+    font-size: 0.9375rem;
+    /* Alterei para rem */
+}
+
+.experiencia-sobreNos,
+.equipe-sobreNos,
+.atendimento-sobreNos,
+.compromisso-sobreNos {
+    display: flex;
+    gap: 5px;
+    padding: 0.625rem 0.625rem;
+    /* Alterei para rem */
+    border: 1px solid #C9A74B;
+    border-radius: 1.25rem;
+    /* Alterei para rem */
+}
+
+.icone-sobreNos {
+    height: 1.25rem;
+}
+
+.titulo-certificado {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+    .titulo-caixa-equipe {
+        font-size: 1rem;
+    }
+
+    .titulo-area h6 {
+        font-size: 1.0625rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .certificacao-caixa {
+        gap: 0.5rem;
+        padding: 10px;
+    }
+
+    .icone-sobreNos {
+        height: 1rem;
+    }
+
+    .titulo-span {
+        font-size: 1rem;
+    }
+
+    .texto-span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .titulo-caixa-equipe {
+        font-size: 1.25rem;
+    }
+
+    .titulo-area h6 {
+        font-size: 1rem;
+    }
+
+    .titulo-caixa-equipe {
+        font-size: 1rem;
+    }
+
+    .texto-dourado {
+        font-size: 1.08rem;
+    }
+
+    .texto-equipe {
+        font-size: 1rem;
+    }
+
+    .equipe {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .certificacao-caixa {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-equipe {
+        gap: 1.875rem;
+        align-items: center;
+    }
+
+    .caixa-equipe-redonda {
+        width: auto;
+    }
+
+    .caixa-imagem-equipe-redonda {
+        height: 180px;
+        width: 200px;
+    }
+
+    .caixa-equipe {
+        width: 100%;
+    }
+    .titulo-area h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 460px) {
+    .container-equipe {
+        flex-direction: column;
+    }
+}
