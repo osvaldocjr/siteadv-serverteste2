@@ -50,7 +50,8 @@
     color: var(--cor-dourado);
 }
 
-#btnLerAdv-Kariny:hover {
+#btnLerAdv-Kariny:hover,
+#btnLerAdv-Kamila:hover {
     background-color: #3d3d3d;
 }
 

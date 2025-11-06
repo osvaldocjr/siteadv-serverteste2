@@ -17,40 +17,74 @@ function getCookie(name) {
     return null;
 }
 
-// Restaurar preferências
-window.onload = () => {
-    document.getElementById("cookies-desempenho").checked = getCookie("cookies_desempenho") === "true";
-    document.getElementById("cookies-marketing").checked = getCookie("cookies_marketing") === "true";
-    document.getElementById("cookies-estatisticas").checked = getCookie("cookies_estatisticas") === "true";
-    document.getElementById("cookies-funcionais").checked = getCookie("cookies_funcionais") === "true";
-}
-
-// Salvar preferências
-document.getElementById("save-preferences").addEventListener("click", () => {
-    setCookie("cookies_desempenho", document.getElementById("cookies-desempenho").checked, 30);
-    setCookie("cookies_marketing", document.getElementById("cookies-marketing").checked, 30);
-    setCookie("cookies_estatisticas", document.getElementById("cookies-estatisticas").checked, 30);
-    setCookie("cookies_funcionais", document.getElementById("cookies-funcionais").checked, 30);
-
-    alert("Preferências de cookies salvas!");
-});
-
 function deleteCookie(name) {
     document.cookie = name + "=; path=/; max-age=0";
 }
 
-// Botão excluir cookies
-document.getElementById("delete-cookies").addEventListener("click", () => {
-    deleteCookie("cookies_desempenho");
-    deleteCookie("cookies_marketing");
-    deleteCookie("cookies_estatisticas");
-    deleteCookie("cookies_funcionais");
+// Aguarda o carregamento completo do DOM
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Elementos dos checkboxes
+    const cookiesDesempenho = document.getElementById("cookies-desempenho");
+    const cookiesMarketing = document.getElementById("cookies-marketing");
+    const cookiesEstatisticas = document.getElementById("cookies-estatisticas");
+    const cookiesFuncionais = document.getElementById("cookies-funcionais");
+    
+    // Botões
+    const btnSavePreferences = document.getElementById("save-preferences");
+    const btnDeleteCookies = document.getElementById("delete-cookies");
 
-    // Desmarcar todos os toggles visuais
-    document.getElementById("cookies-desempenho").checked = false;
-    document.getElementById("cookies-marketing").checked = false;
-    document.getElementById("cookies-estatisticas").checked = false;
-    document.getElementById("cookies-funcionais").checked = false;
+    // Restaurar preferências ao carregar a página
+    if (cookiesDesempenho) {
+        cookiesDesempenho.checked = getCookie("cookies_desempenho") === "true";
+    }
+    if (cookiesMarketing) {
+        cookiesMarketing.checked = getCookie("cookies_marketing") === "true";
+    }
+    if (cookiesEstatisticas) {
+        cookiesEstatisticas.checked = getCookie("cookies_estatisticas") === "true";
+    }
+    if (cookiesFuncionais) {
+        cookiesFuncionais.checked = getCookie("cookies_funcionais") === "true";
+    }
 
-    alert("Todos os cookies foram excluídos!");
+    // Salvar preferências
+    if (btnSavePreferences) {
+        btnSavePreferences.addEventListener("click", function() {
+            if (cookiesDesempenho) {
+                setCookie("cookies_desempenho", cookiesDesempenho.checked, 30);
+            }
+            if (cookiesMarketing) {
+                setCookie("cookies_marketing", cookiesMarketing.checked, 30);
+            }
+            if (cookiesEstatisticas) {
+                setCookie("cookies_estatisticas", cookiesEstatisticas.checked, 30);
+            }
+            if (cookiesFuncionais) {
+                setCookie("cookies_funcionais", cookiesFuncionais.checked, 30);
+            }
+
+            alert("Preferências de cookies salvas!");
+        });
+    }
+
+    // Excluir cookies
+    if (btnDeleteCookies) {
+        btnDeleteCookies.addEventListener("click", function() {
+            // Deletar os cookies
+            deleteCookie("cookies_desempenho");
+            deleteCookie("cookies_marketing");
+            deleteCookie("cookies_estatisticas");
+            deleteCookie("cookies_funcionais");
+
+            // Desmarcar todos os toggles visuais
+            if (cookiesDesempenho) cookiesDesempenho.checked = false;
+            if (cookiesMarketing) cookiesMarketing.checked = false;
+            if (cookiesEstatisticas) cookiesEstatisticas.checked = false;
+            if (cookiesFuncionais) cookiesFuncionais.checked = false;
+
+            alert("Todos os cookies foram excluídos!");
+        });
+    }
+
 });

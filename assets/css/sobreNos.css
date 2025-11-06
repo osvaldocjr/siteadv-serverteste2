@@ -1,12 +1,16 @@
 #sobreNos {
-    height: calc(100vh - 100px);
     padding: 3rem 0;
     /* Alterei para rem */
     width: 100%;
     background-color: var(--cor-bege-claro);
     display: flex;
     align-items: center;
+    justify-content:center;
     gap: 2rem;
+}
+
+.container-sobre-nos {
+    display:flex;
 }
 
 .imagem-sobre-nos {
@@ -35,7 +39,7 @@
 .titulo-sobreNos h2 {
     font-family: "times", Arial, Helvetica, sans-serif;
     color: var(--cor-titulo);
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* Alterei para rem */
     font-weight: 600;
 }
@@ -171,7 +175,8 @@
 @media (max-width: 960px) {
 
     /* 960px */
-    .imagem-sobre-nos {
+    .imagem-sobre-nos,
+    .imagem-sobreNos {
         display: none;
     }
 

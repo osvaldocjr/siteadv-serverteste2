@@ -1,39 +1,253 @@
 const textos = {
     consultoria: `
-        <h3>Consultoria Jurídica para Empresas</h3>
-        <p>A consultoria jurídica para empresas oferece suporte especializado na prevenção de riscos legais e na tomada de decisões estratégicas.</p>
-        <p>Entre os serviços estão:</p>
-        <ul>
-            <li>Orientação em conformidade legal;</li>
-            <li>Avaliação de riscos contratuais;</li>
-            <li>Prevenção de litígios;</li>
-            <li>Planejamento jurídico empresarial.</li>
-        </ul>
+        <ul class="descricao-caixa-areaAtuacao">
+                        <li>
+                            <h6 class="titulo-modal">Análise e Elaboração de Contratos:</h6> 
+                            <p class="texto-modal">
+                                Preparamos e revisamos contratos comerciais, societários, de prestação de serviços e outros, 
+                                garantindo clareza, equilíbrio e segurança jurídica.
+                            </p>
+                        </li>
+                        <li>
+                            <h6 class="titulo-modal">Apoio na Tomada de Decisões:</h6> 
+                            <p class="texto-modal">
+                                Orientamos sócios, gestores e departamentos sobre os riscos e impactos legais de cada decisão estratégica.
+                            </p>
+                        </li>
+                        <li>
+                            <h6 class="titulo-modal">Planejamento Societário e Empresarial:</h6> 
+                            <p class="texto-modal">
+                                Auxiliamos na estruturação ou reorganização da empresa, pensando no crescimento sustentável 
+                                e na proteção do patrimônio.
+                            </p>
+                        </li>
+                        <li>
+                            <h6 class="titulo-modal">Prevenção de Conflitos:</h6> 
+                            <p class="texto-modal">
+                                Trabalhamos para antecipar problemas e sugerir soluções que evitem disputas judiciais e prejuízos à 
+                                imagem da empresa.
+                            </p>
+                        </li>
+                        <li>
+                            <h6 class="titulo-modal">Adequação à Legislação e às Boas Práticas:</h6> 
+                            <p class="texto-modal">
+                                Mantemos sua empresa atualizada com as exigências legais, regulatórias e setoriais.
+                            </p>
+                        </li>
+                        <li>
+                            <h6 class="titulo-modal">Suporte Contínuo ao Negócio:</h6> 
+                            <p class="texto-modal">
+                                Atuamos como parceiros jurídicos no dia a dia da empresa, prontos para esclarecer 
+                                dúvidas e apoiar nas mais diversas questões legais.
+                            </p>
+                        </li>
+                    </ul>
     `,
     societario: `
-        <h3>Direito Societário</h3>
-        <p>Atuamos na regularização e estruturação de empresas, elaboração de contratos sociais e acordos de sócios.</p>
-        <p>Também realizamos reorganizações societárias e mediação de conflitos entre sócios.</p>
+    <div class="separa-modal">
+        <h6 class="titulo-modal">Direito Societário</h6>
+                        <p class="texto-modal">
+                            Oferecemos suporte jurídico completo para a estruturação e crescimento de empresas, com foco na organização societária, entrada de investidores e proteção do patrimônio dos sócios. Atuamos nas seguintes frentes:
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Criação e Reorganização de Empresas</h6>
+                        <p class="texto-modal">
+                            Auxiliamos na constituição de sociedades, alterações contratuais e reorganizações empresariais, sempre com foco na segurança jurídica e eficiência operacional.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Fusões e Aquisições (M&A)</h6>
+                        <p class="texto-modal">
+                            Apoiamos empresas em processos de compra, venda ou união de negócios, garantindo uma estrutura legal sólida e alinhada aos interesses das partes envolvidas.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Planejamento Patrimonial e Sucessório</h6>
+                        <p class="texto-modal">
+                            Desenvolvemos estratégias para proteger o patrimônio dos sócios e organizar a sucessão empresarial de forma segura e eficaz.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Acordos de Investimento</h6>
+                        <p class="texto-modal">
+                            Elaboramos documentos que formalizam a entrada de investidores, com regras claras sobre participação, governança e retorno financeiro.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Acordos entre Sócios ou Quotistas</h6>
+                        <p class="texto-modal">
+                            Criamos acordos que definem direitos, deveres e regras de convivência entre sócios, prevenindo conflitos e fortalecendo a gestão da empresa.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Atração e Prospecção de Investimentos</h6>
+                        <p class="texto-modal">
+                            Orientamos empresas na preparação jurídica para captação de recursos e relacionamento com investidores.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Elaboração e Negociação de Contratos</h6>
+                        <p class="texto-modal">
+                            Apoiamos sua empresa em todas as etapas da negociação, elaboração e gestão de contratos, com foco na segurança jurídica, clareza e alinhamento com os objetivos do negócio. Nosso trabalho inclui:
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Orientação Estratégica nas Negociações</h6>
+                        <p class="texto-modal">
+                            Aconselhamos sua equipe durante negociações contratuais, ajudando a defender interesses e construir acordos equilibrados.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Elaboração e Revisão de Contratos</h6>
+                        <p class="texto-modal">
+                            Criamos e revisamos contratos comerciais, operacionais e estratégicos com linguagem clara, cláusulas sólidas e foco na prevenção de litígios.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Governança e Gestão Contratual</h6>
+                        <p class="texto-modal">
+                            Ajudamos sua empresa a organizar e acompanhar contratos em vigor, com foco em prazos, obrigações e compliance.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Validação Jurídica de Contratos</h6>
+                        <p class="texto-modal">
+                            Analisamos contratos recebidos por sua empresa, verificando riscos, lacunas e pontos de atenção antes da assinatura.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Franquias e Expansão de Negócios</h6>
+                        <p class="texto-modal">
+                            Estruturamos contratos de franquia e modelos de expansão com base legal robusta e alinhados às práticas de mercado.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Transferência de Tecnologia</h6>
+                        <p class="texto-modal">
+                            Elaboramos acordos de licenciamento, uso de marca, know-how e outros ativos intangíveis com proteção jurídica adequada.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Procedimentos e Manuais Operacionais</h6>
+                        <p class="texto-modal">
+                            Criamos ou revisamos documentos que formalizam processos de fornecimento, compras, parcerias e distribuição.
+                        </p>
+                        </div>
+<div class="separa-modal">
+                        <h6 class="titulo-modal">Estruturação de Canais de Vendas</h6>
+                        <p class="texto-modal">
+                            Oferecemos suporte jurídico na organização de canais de vendas e distribuição, com contratos ajustados à realidade de cada operação.
+                        </p>
+                        </div>
     `,
     trabalhista: `
-        <h3>Direito Trabalhista Empresarial</h3>
-        <p>Atuação estratégica na prevenção e defesa de ações trabalhistas, elaboração de políticas internas e auditoria jurídica.</p>
+    <div class="separa-modal">
+        <h6 class="titulo-modal">Direito Trabalhista para Empresas</h6>
+                        <p class="texto-modal">
+                            Oferecemos suporte completo para que sua empresa atue em conformidade com a legislação trabalhista, reduza riscos e fortaleça a relação com seus colaboradores. Nosso trabalho inclui:
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Consultoria Preventiva</h6>
+                        <p class="texto-modal">
+                            Orientamos sua empresa para evitar conflitos trabalhistas antes que eles aconteçam.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Soluções para Conflitos Trabalhistas</h6>
+                        <p class="texto-modal">
+                            Atuamos na resolução de disputas com empregados, de forma judicial ou extrajudicial, tanto em casos individuais quanto coletivos.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Auditorias e Análise de Riscos</h6>
+                        <p class="texto-modal">
+                            Realizamos diagnósticos completos para identificar falhas e prevenir passivos trabalhistas.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Contratos de Trabalho</h6>
+                        <p class="texto-modal">
+                            Cuidamos da elaboração, revisão e atualização de contratos e outros documentos relacionados à relação de trabalho.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Gestão de Terceirizados</h6>
+                        <p class="texto-modal">
+                            Ajudamos sua empresa a contratar e gerenciar prestadores de serviços com segurança jurídica.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Atração e Retenção de Talentos</h6>
+                        <p class="texto-modal">
+                            Desenvolvemos estratégias jurídicas para manter sua equipe engajada e reduzir a rotatividade.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Benefícios e Participação nos Resultados</h6>
+                        <p class="texto-modal">
+                            Estruturamos planos de benefícios e de participação nos lucros alinhados à legislação e aos objetivos da empresa.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Programas de Conformidade Trabalhista</h6>
+                        <p class="texto-modal">
+                            Criamos programas de integridade e compliance voltados à prevenção de irregularidades no ambiente de trabalho.
+                        </p>
+                        </div>
+    <div class="separa-modal">
+                        <h6 class="titulo-modal">Resolução de Conflitos</h6>
+                        <p class="texto-modal">
+                            Atuamos para resolver conflitos de forma eficiente, buscando sempre a solução mais vantajosa para o cliente — seja por meio de acordos ou pela via judicial. Nosso foco é proteger os interesses da empresa, reduzir riscos e preservar relacionamentos estratégicos.
+                        </p>
+                        </div>
+        <div class="separa-modal">
+            <h6 class="titulo-modal">Análise de Riscos e Prevenção de Conflitos</h6>
+            <p class="texto-modal">
+                Identificamos possíveis problemas antes que se tornem disputas, propondo soluções jurídicas para minimizar impactos.
+            </p>
+        </div>
+        <div class="separa-modal">
+            <h6 class="titulo-modal">Negociações e Acordos Extrajudiciais</h6>
+            <p class="texto-modal">
+                Conduzimos negociações diretas com outras partes, sempre com foco na resolução rápida, segura e econômica dos conflitos.
+            </p>
+        </div>
+        <div class="separa-modal">
+            <h6 class="titulo-modal">Notificações Extrajudiciais</h6>
+            <p class="texto-modal">
+                Elaboramos e acompanhamos notificações para formalizar cobranças, comunicações ou exigências legais de forma estratégica.
+            </p>
+        </div>
+        <div class="separa-modal">
+            <h6 class="titulo-modal">Definição de Estratégias Processuais</h6>
+            <p class="texto-modal">
+                Planejamos cada etapa do processo com base nas particularidades do caso e nos objetivos da empresa.
+            </p>
+        </div>
+        <div class="separa-modal">
+            <h6 class="titulo-modal">Atuação em Processos Judiciais e Administrativos</h6>
+            <p class="texto-modal">
+                Representamos empresas em litígios relacionados a contratos, relações societárias, direito digital, imobiliário, propriedade intelectual, recuperação de créditos, relações de consumo e outras áreas.
+            </p>
+        </div>
     `,
     negociacao: `
-        <h3>Elaboração e Negociação de Contratos</h3>
-        <p>Oferecemos serviços especializados na elaboração e negociação de contratos comerciais e empresariais.</p>
+        <h3 class="titulo-modal">Elaboração e Negociação de Contratos</h3>
+        <p class="texto-modal">Oferecemos serviços especializados na elaboração e negociação de contratos comerciais e empresariais.</p>
     `,
     conflito: `
-        <h3>Resolução de Conflitos</h3>
-        <p>Atuamos na mediação e resolução de conflitos empresariais e societários.</p>
+        <h3 class="titulo-modal">Resolução de Conflitos</h3>
+        <p class="texto-modal">Atuamos na mediação e resolução de conflitos empresariais e societários.</p>
     `,
     familia: `
-        <h3>Direito das Famílias</h3>
-        <p>Assessoria completa em questões familiares, incluindo divórcio, guarda e partilha de bens.</p>
+        <h3 class="titulo-modal">Direito das Famílias</h3>
+        <p class="texto-modal">Assessoria completa em questões familiares, incluindo divórcio, guarda e partilha de bens.</p>
     `,
     autismo: `
-        <h3>Direitos da Pessoa com Autismo</h3>
-        <p>Defesa dos direitos e garantias legais das pessoas com Transtorno do Espectro Autista (TEA).</p>
+        <h3 class="titulo-modal">Direitos da Pessoa com Autismo</h3>
+        <p class="texto-modal">Defesa dos direitos e garantias legais das pessoas com Transtorno do Espectro Autista (TEA).</p>
     `,
     kariny: `
         <div class="texto-equipe">

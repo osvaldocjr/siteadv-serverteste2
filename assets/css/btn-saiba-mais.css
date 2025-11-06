@@ -80,11 +80,13 @@ body.modal-aberto {
     font-weight:600;
     font-size:1.3rem;
     margin-bottom:5px;
+    text-align:start;
 }
 .texto-modal {
     font-family:sans-serif;
     font-weight:500;
-    font-size:1rem;
+    font-size:1.09rem;
+    color: #000;
 }
 
 @media (max-width: 510px) {
