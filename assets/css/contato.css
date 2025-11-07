@@ -1,3 +1,7 @@
+/* ====================================
+   CONTATO - RESPONSIVO UNIVERSAL
+   ==================================== */
+
 .contato {
     padding: 0px 20px;
     background-color: var(--cor-marrom-escuro);
@@ -19,7 +23,7 @@ iframe {
 }
 
 .container-redeSociais-contato {
-    margin: 50px 0;
+    margin: 25px 0;
 }
 
 .enderecoMapa {
