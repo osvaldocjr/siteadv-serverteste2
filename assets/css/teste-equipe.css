@@ -3,6 +3,7 @@
    ==================================== */
 
 .equipe {
+    height:calc(100vh - 110px);
     padding: 2rem 0;
     width: 100%;
     background-color: var(--cor-bege-claro);
@@ -151,9 +152,9 @@
 .texto-equipe {
     margin-top: 0.625rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 0.875rem;
-    color: #3d3d3d;
+    font-weight:500;
+    font-size: 1.1rem;
+    color: #000;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -238,9 +239,13 @@
 
 /* Desktop HD: 1366×768 e similares */
 @media (min-width: 1200px) and (max-width: 1919px) {
+    .equipe {
+        height:calc(100vh - 110px);
+    }
+
     .caixa-imagem-equipe-redonda {
-        height: 250px;
-        width: 270px;
+        height: 150px;
+        width: 170px;
     }
 
     .equipe .titulo-area h3 {
