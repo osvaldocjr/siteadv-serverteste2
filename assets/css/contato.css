@@ -173,6 +173,7 @@ iframe {
 
 @media (max-width: 400px) {
     iframe {
+        height:220px;
         width: 100%;
     }
 

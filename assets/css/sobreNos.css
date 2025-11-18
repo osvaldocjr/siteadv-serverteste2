@@ -87,6 +87,13 @@
 
 .texto-sobreNos {
     margin: 0.5rem 0;
+    display:flex;
+    gap:1rem;
+}
+
+.lado-esquerdo-sobreNos,
+.lado-direito-sobreNos {
+    flex: 1; /* faz ambos ocuparem o mesmo espaço */
 }
 
 .texto-sobreNos p {
@@ -226,14 +233,6 @@
         font-size: 1rem;
         margin-bottom: 0.7rem;
     }
-    
-    .texto-saiba-mais-escritorio-desktop {
-        display: none;
-    }
-
-    .btn-escritorio-saiba-mais-desktop {
-        display: block;
-    }
 }
 
 /* Notebooks pequenos: 1024-1199px */
@@ -253,6 +252,12 @@
     .texto-sobreNos p {
         font-size: 0.95rem;
         margin-bottom: 0.6rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .texto-sobreNos {
+        flex-direction:column;
     }
 }
 
@@ -280,18 +285,6 @@
     .texto-sobreNos p {
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
-    }
-    
-    .btn-escritorio-saiba-mais-desktop {
-        display: none;
-    }
-    
-    .btn-escritorio-saiba-mais-tablet {
-        display: block;
-    }
-    
-    .texto-saiba-mais-escritorio-tablet {
-        display: none;
     }
 }
 
@@ -371,18 +364,6 @@
     .texto-sobreNos p {
         font-size: 0.95rem;
         margin-bottom: 0.6rem;
-    }
-    
-    .btn-escritorio-saiba-mais-desktop {
-        display: none;
-    }
-    
-    .btn-escritorio-saiba-mais-tablet {
-        display: block;
-    }
-    
-    .texto-saiba-mais-escritorio-tablet {
-        display: none;
     }
 }
 

@@ -176,7 +176,7 @@
     font-family: "times", Arial, Helvetica, sans-serif;
     color: #2B2B2B;
     font-weight: 700;
-    font-size: clamp(0.7rem, 1.8vw, 1rem);
+    font-size: clamp(1rem, 1.8vw, 1rem);
     line-height: 1.2;
 }
 
@@ -184,7 +184,7 @@
     font-family: sans-serif;
     font-weight: 500;
     color: var(--cor-marrom-escuro);
-    font-size: clamp(0.65rem, 1.5vw, 0.875rem);
+    font-size: clamp(0.8rem, 1.5vw, 0.875rem);
     line-height: 1.2;
 }
 
@@ -237,6 +237,12 @@
     }
 }
 
+@media (min-height:1080px) {
+    .equipe {
+        height: 100%;
+    }
+}
+
 /* Desktop HD: 1366×768 e similares */
 @media (min-width: 1200px) and (max-width: 1919px) {
     .equipe {
@@ -256,7 +262,7 @@
 /* Notebooks pequenos e tablets landscape: 1024×768 */
 @media (min-width: 768px) and (max-width: 1199px) {
     .equipe {
-        padding: 0.8rem 0;
+        padding: 2rem 0;
     }
 
     .caixa-imagem-equipe-redonda {
@@ -277,7 +283,6 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .equipe {
         height: auto;
-        min-height: calc(100vh - 110px);
     }
 
     .certificacao-caixa {
@@ -372,11 +377,11 @@
     }
 
     .titulo-span {
-        font-size: 0.75rem;
+        font-size: 0.95rem;
     }
 
     .texto-span {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 }
 
