@@ -34,12 +34,7 @@
     margin-bottom: 1rem;
 }
 
-.equipe .titulo-area h3 {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    margin-bottom: 0.5rem;
-    font-family: "times", Arial, Helvetica, sans-serif;
-    color: var(--cor-titulo);
-}
+
 
 .equipe .titulo-area h6 {
     font-size: clamp(0.75rem, 2vw, 1.15rem);

@@ -83,6 +83,12 @@
     display: none;
 }
 
+@media (max-width: 1000px) {
+    .nav-ul li a{
+        font-size:0.8rem;
+    }
+}
+
 @media (max-width: 850px) {
     .menu-direita {
         width: auto;

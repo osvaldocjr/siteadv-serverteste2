@@ -1,0 +1,136 @@
+.materiais {
+    padding: 3.125rem 1.5625rem;
+    /* 50px 25px */
+    width: 100%;
+    background-color: var(--cor-creme);
+}
+
+.container-materiais {
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Mova para cá - sempre ativo */
+}
+
+.header-caixa-materiais {
+    display:flex;
+    gap:1rem;
+}
+
+.header-img {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:10px;
+    border-radius:15px;
+    background-color:var(--cor-bege-claro);
+}
+
+.header-caixa-materiais img {
+    height:32px;
+}
+
+.caixa-download {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 6px var(--cor-marrom-escuro);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    flex: 1 1 calc(33.333% - 0.5rem); /* Adicione: 3 colunas por padrão */
+    max-width: 390px; /* Adicione: largura mínima */
+    min-width: 390px;
+}
+
+.caixa-download:hover {
+    transform: scale(1.001);
+    box-shadow: 0 12px 24px #4a3333;
+}
+
+.categoria {
+    font-size: 0.85em;
+    color: var(--cor-marrom-escuro);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.titulo-materiais {
+    font-size: 1.4em;
+    color: var(--cor-titulo);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+.meta-icon {
+    font-size: 1.1em;
+}
+
+.download-btn-materiais {
+    width: 100%;
+    padding: 14px 20px;
+    background: var(--cor-laranja-queimado);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.download-btn-materiais:hover{
+    transform: scale(1.02);
+}
+
+/* Ajuste para 2 colunas em telas médias */
+@media (max-width:1180px) {
+    .caixa-download {
+        flex: 1 1 calc(50% - 0.5rem); /* 2 colunas */
+    }
+}
+
+/* Ajuste para 1 coluna em mobile */
+@media (max-width: 768px) {
+    .caixa-download {
+        flex: 1 1 100%; /* 1 coluna */
+    }
+}
+
+@media (min-height:1080px) {
+    .materiais {
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .materiais {
+        height: calc(100vh - 110px);
+    }
+}
+
+@media (max-width: 430px) {
+    .materiais {
+        padding:1rem 0;
+    }
+    .caixa-download {
+        max-width:390px;
+        min-width:auto;
+    }
+    .titulo-materiais {
+        font-size:1.1em;
+    }
+}
